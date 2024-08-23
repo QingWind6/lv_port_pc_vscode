@@ -61,8 +61,33 @@ extern lv_obj_t * ui_Selectbtn10text;
 extern lv_obj_t * ui_Selectbtn10del;
 extern lv_obj_t * ui_Selectbtn10edit;
 
+typedef struct _objects_t {
+    lv_obj_t *page_data_viewer;
+    lv_obj_t *page_setting;
+    lv_obj_t *page_startup;
+    lv_obj_t *dataviewerback;
+    lv_obj_t *view_day_select;
+    lv_obj_t *view_mon_select;
+    lv_obj_t *view_year_select;
+    lv_obj_t *viewfocussym;
+    lv_obj_t *viewfocustitle;
+    lv_obj_t *viewfocusvalue;
+    lv_obj_t *viewrestsym;
+    lv_obj_t *viewresttitle;
+    lv_obj_t *viewrestvalue;
+
+    lv_obj_t *settingbtn1;
+    lv_obj_t *settingbtn2;
+    lv_obj_t *settingbtn3;
+    lv_obj_t *settingbtn4;
+    lv_obj_t *settingbtn5;
+} objects_t;
+extern objects_t objects;
 
 void view_pages_init();
+
+void update_pie_chart(int focus_time, int rest_time);
+
 
 #ifdef __cplusplus
 }

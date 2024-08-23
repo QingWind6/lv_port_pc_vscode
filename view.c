@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+#include <time.h>
 
 static const char *TAG = "view";
 
@@ -67,6 +68,7 @@ int view_init(void)
     ui_init();
     lv_pm_init();
     view_pages_init();
+    
 
     // esp_event_post_to(app_event_loop_handle, VIEW_EVENT_BASE, VIEW_EVENT_SCREEN_START, NULL, 0, pdMS_TO_TICKS(10000));
                     
